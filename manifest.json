@@ -68,7 +68,7 @@
             {
               "label": "Montserrat",
               "value": "'Montserrat', sans-serif"
-            },
+            }
           ],
           "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
         },
