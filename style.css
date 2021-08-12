@@ -1059,7 +1059,8 @@ input[type="submit"][disabled] {
 
 /***** Footer *****/
 .footer {
-  border-top: 1px solid #ddd;
+  background-color: #121519;
+  color: #d0d0d1;
   margin-top: 60px;
   padding: 30px 0;
 }
