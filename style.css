@@ -16,7 +16,7 @@ main {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: calc(1.5459rem + 3.5508vmin);
   margin: 0.67em 0;
 }
 
@@ -786,6 +786,8 @@ input[type="submit"][disabled] {
 /***** Header *****/
 .header {
   width: 100%;
+  z-index: 1;
+  position: relative;
   box-shadow: 0 0.125rem 0.625rem 0 rgba(39, 45, 55, 0.25);
 
 }
@@ -799,13 +801,6 @@ input[type="submit"][disabled] {
   display: flex;
   height: 71px;
   justify-content: space-between;
-}
-
-@media (min-width: 1160px) {
-  .header {
-    padding: 0;
-    width: 90%;
-  }
 }
 
 .logo img {
@@ -1155,7 +1150,11 @@ input[type="submit"][disabled] {
 
 .search-full input[type="search"] {
   border: 2px solid #1c191a;
-  height: calc(1.5em + 1.4rem + 2px);
+  padding-top:24px;
+  padding-bottom: 24px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1c191a
 }
 
 .search-icon {
@@ -1163,11 +1162,11 @@ input[type="submit"][disabled] {
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
-  left: 15px;
+  left: 10px;
   z-index: 1;
-  width: 18px;
-  height: 18px;
-  color: #777;
+  width: 24px;
+  height: 24px;
+  color: #272d37;
 }
 
 [dir="rtl"] .search-icon {
@@ -1370,6 +1369,7 @@ input[type="submit"][disabled] {
 
 .blocks-item-description {
   margin: 0;
+  color: #52575f;
   font-size: 16px;
 }
 
@@ -1712,7 +1712,7 @@ input[type="submit"][disabled] {
     flex: 1 0 66%;
     max-width: 66%;
     min-width: 640px;
-    padding: 0 30px;
+    padding: 0 60px;
   }
 }
 
@@ -1987,8 +1987,8 @@ input[type="submit"][disabled] {
 
 .sidenav-item.current-article,
 .sidenav-item:hover {
-  background-color: $brand_color;
-  color: $brand_text_color;
+  background-color: rgba(196,217,229,0.25);
+  color: rgba(21, 101, 171, 1);
   text-decoration: none;
 }
 
