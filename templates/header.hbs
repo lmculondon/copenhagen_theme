@@ -1,6 +1,7 @@
 <a class="skip-navigation" tabindex="1" href="#main-content">{{t 'skip_navigation' }}</a>
 
 <header class="header">
+  <div class="container">
   <div class="logo">
     {{#link 'help_center'}}
       <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}" />
@@ -16,7 +17,7 @@
       </svg>
     </button>
     <nav class="user-nav" id="user-nav">
-      {{link 'community'}}
+      <!--{{link 'community'}}-->
       {{link 'new_request' class='submit-a-request'}}
     </nav>
     {{#if signed_in}}
@@ -42,5 +43,6 @@
         {{t 'sign_in'}}
       {{/link}}
     {{/if}}
+  </div>
   </div>
 </header>
