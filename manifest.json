@@ -1,9 +1,9 @@
 {
-  "name": "Copenhagen",
-  "author": "Zendesk",
-  "version": "2.10.0",
+  "name": "LMCU Zendesk Theme",
+  "author": "London Mutual Credit Union",
+  "version": "0.0.1",
   "api_version": 2,
-  "default_locale": "en-us",
+  "default_locale": "en-gb",
   "settings": [
     {
       "label": "colors_group_label",
