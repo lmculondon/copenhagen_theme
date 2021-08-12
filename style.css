@@ -655,7 +655,8 @@ ul {
 }
 
 .logo img {
-  max-height: 37px;
+  height: 37px;
+  width: 100%;
   vertical-align: middle;
 }
 
