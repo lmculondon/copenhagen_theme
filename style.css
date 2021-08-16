@@ -992,8 +992,8 @@ input[type="submit"][disabled] {
   padding: 10px;
   border-radius: 4px;
   color: #475264;
-    font-weight: 400;
-    font-family: 'Montserrat';
+  font-weight: 400;
+  font-family: 'Montserrat';
   white-space: nowrap;
 }
 
@@ -1157,7 +1157,7 @@ input[type="submit"][disabled] {
 
 .search-full input[type="search"] {
   border: 2px solid #1c191a;
-  padding-top:24px;
+  padding-top: 24px;
   padding-bottom: 24px;
   font-size: 22px;
   font-weight: 400;
@@ -1203,15 +1203,27 @@ input[type="submit"][disabled] {
   max-width: 610px;
   margin: 0 auto;
 }
+
 .hero-headline {
   text-align: left;
   font-size: calc(1.4407rem + 2.2884vmin);
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 
 }
+
 .hero-search {
   position: relative;
 }
+
+.hero-handylinks {
+  text-align: left;
+
+}
+
+.hero-handylinks a {
+  text-decoration: underline;
+}
+
 .page-header {
   display: flex;
   flex-direction: column;
@@ -1390,6 +1402,29 @@ input[type="submit"][disabled] {
 
 .blocks-item-description:not(:empty) {
   margin-top: 10px;
+}
+.blocks-item-icon {
+  max-width: 80px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+/***** Get Started Blocks *****/
+.get-started .blocks-list {
+  margin: 0 15px 30px;
+  background-color: #F7C2CC;
+  border: none;
+  padding: 3px;
+}
+.get-started .blocks-list:hover * {
+  color: #000000
+}
+
+@media (min-width: 768px) {
+  .get-started .blocks-list {
+    flex-wrap: nowrap
+  }
 }
 
 /***** Homepage *****/
@@ -2002,7 +2037,7 @@ input[type="submit"][disabled] {
 
 .sidenav-item.current-article,
 .sidenav-item:hover {
-  background-color: rgba(196,217,229,0.25);
+  background-color: rgba(196, 217, 229, 0.25);
   color: rgba(21, 101, 171, 1);
   text-decoration: none;
 }
