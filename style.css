@@ -1516,9 +1516,9 @@ input[type="submit"][disabled] {
 .promoted-articles-item a {
   display: block;
   border-bottom: 1px solid #ddd;
-  padding: 15px 0;
+  padding: 15px 32px 15px 0;
   color: #1565ab;
-  font-weight: 500;
+  font-weight: 600;
   font-family: 'Montserrat', sans-serif;
   position: relative;
   display: block;
@@ -1528,10 +1528,11 @@ input[type="submit"][disabled] {
   position: absolute;
   content: "\2192";
   right:0;
-  top:0;
-  font-size: 20px;
-  width:20px;
-  height: 20px;
+  top:16px;
+  font-size: 24px;
+  width:24px;
+  line-height: 1;
+  height: 24px;
 }
 
 .promoted-articles-item .icon-lock {
