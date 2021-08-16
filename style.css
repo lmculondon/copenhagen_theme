@@ -1159,8 +1159,8 @@ input[type="submit"][disabled] {
   border: 2px solid #1c191a;
   padding-top:24px;
   padding-bottom: 24px;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: 400;
   color: #1c191a
 }
 
@@ -1203,7 +1203,15 @@ input[type="submit"][disabled] {
   max-width: 610px;
   margin: 0 auto;
 }
+.hero-headline {
+  text-align: left;
+  font-size: calc(1.4407rem + 2.2884vmin);
+    margin-bottom: 1rem;
 
+}
+.hero-search {
+  position: relative;
+}
 .page-header {
   display: flex;
   flex-direction: column;
@@ -1307,7 +1315,7 @@ input[type="submit"][disabled] {
   flex: 1 0 340px;
   margin: 0 0 30px;
   max-width: 100%;
-  text-align: center;
+  text-align: left;
 }
 
 @media (min-width: 768px) {
