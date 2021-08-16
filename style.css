@@ -1440,6 +1440,7 @@ input[type="submit"][disabled] {
   flex: 1 0;
   min-width: 240px;
   max-width: unset;
+  transition: all 300ms ease 0ms;
 }
 
 .get-started .blocks-list .blocks-item .blocks-item-title {
@@ -1448,6 +1449,7 @@ input[type="submit"][disabled] {
 
 .get-started .blocks-list .blocks-item:hover {
   border: none;
+  background-color: #f4abb9;
 }
 
 .get-started .blocks-list .blocks-item:hover * {
@@ -1518,8 +1520,9 @@ input[type="submit"][disabled] {
   font-weight: 500;
   font-family: 'Montserrat',sans-serif;
   position: relative;
+  display: block;
 }
-.promoted-articles-item a:after {
+.promoted-articles-item a::after {
 position: absolute;
 content: "\2192"
 float:right;
