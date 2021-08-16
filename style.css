@@ -1406,16 +1406,23 @@ input[type="submit"][disabled] {
 .blocks-item-icon {
   max-width: 80px;
   width: 100%;
+  padding-left: 15px;
   height: auto;
   margin-bottom: 12px;
 }
 
+
+  
+
 /***** Get Started Blocks *****/
-.get-started .blocks-list {
+.get-started .blocks-list .blocks-item {
   margin: 0 15px 30px;
   background-color: #F7C2CC;
   border: none;
   padding: 3px;
+}
+.get-started .blocks-list .blocks-item:hover {
+  border: none;
 }
 .get-started .blocks-list:hover * {
   color: #000000
@@ -1424,6 +1431,12 @@ input[type="submit"][disabled] {
 @media (min-width: 768px) {
   .get-started .blocks-list {
     flex-wrap: nowrap
+  }
+  .get-started .blocks-list .blocks-item {
+    flex-direction: column;
+  }
+  .get-started .blocks-list .blocks-item-icon {
+    margin: 20px 20px 0 30px;
   }
 }
 
