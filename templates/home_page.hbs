@@ -11,9 +11,7 @@
       </svg>
       {{search submit=true instant=settings.instant_search class='search search-full'}}
     </div>
-    <div class="hero-handylinks">
-      <strong>Popular:</strong> <a href="{{page_path 'help_center'}}/search?query=loan+eligibility">loan eligibility</a> <a href="{{page_path 'help_center'}}/search?query=online+banking+registration">online banking registration</a> <a href="{{page_path 'help_center'}}/search?query=member+number">member number</a>
-    </div>
+    
   </div>
 </section>
 <div class="container">
@@ -22,7 +20,7 @@
     <ul class="blocks-list">
       <li class="blocks-item">
         <a href="{{page_path 'topics'}}" class="blocks-item-link">
-          <img src="{{asset 'icon-customer-service.svg'}}" class="blocks-item-icon" alt="Help Request Icon"/>
+          <img src="{{asset 'icon-documentation.svg'}}" class="blocks-item-icon" alt="Help Request Icon"/>
           <span class="blocks-item-title">Articles</span>
           <span class="blocks-item-description">Get answers to common questions about membership, loans and
             accounts</span>
@@ -30,7 +28,7 @@
       </li>
       <li class="blocks-item">
         <a href="https://creditunion.co.uk/service-status/" class="blocks-item-link">
-        <img src="{{asset 'icon-customer-service.svg'}}" class="blocks-item-icon" alt="Help Request Icon"/>
+        <img src="{{asset 'icon-status.svg'}}" class="blocks-item-icon" alt="Help Request Icon"/>
           <span class="blocks-item-title">Service Status</span>
           <span class="blocks-item-description">Check for current and scheduled maintenance and service issues</span>
         </a>
@@ -49,7 +47,7 @@
 </div>
 <div class="container">
     {{#if promoted_articles}}
-    <section class="articles">
+    <section class="section articles">
       <h2 class="section-header">Popular Guides</h2>
       <ul class="article-list promoted-articles">
         {{#each promoted_articles}}
