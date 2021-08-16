@@ -1422,6 +1422,7 @@ input[type="submit"][disabled] {
   height: auto;
   margin-bottom: 10px;
 }
+
 @media (min-width: 768px) {
   .blocks-item-icon {
     max-width: 80px;
@@ -1518,15 +1519,21 @@ input[type="submit"][disabled] {
   padding: 15px 0;
   color: #1565ab;
   font-weight: 500;
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Montserrat', sans-serif;
   position: relative;
   display: block;
 }
+
 .promoted-articles-item a::after {
-position: absolute;
-content: "\2192"
-float:right;
+  position: absolute;
+  content: "\2192";
+  right:0;
+  top:0;
+  font-size: 20px;
+  width:20px;
+  height: 20px;
 }
+
 .promoted-articles-item .icon-lock {
   vertical-align: baseline;
 }
