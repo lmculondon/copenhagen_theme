@@ -9,7 +9,7 @@
         <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor" />
         <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5" />
       </svg>
-      {{search submit=false instant=settings.instant_search class='search search-full'}}
+      {{search submit=true instant=settings.instant_search class='search search-full'}}
     </div>
     <div class="hero-handylinks">
       <strong>Popular:</strong> <a href="{{page_path 'help_center'}}/search?query=loan+eligibility">loan eligibility</a> <a href="{{page_path 'help_center'}}/search?query=online+banking+registration">online banking registration</a> <a href="{{page_path 'help_center'}}/search?query=member+number">member number</a>
@@ -22,6 +22,7 @@
     <ul class="blocks-list">
       <li class="blocks-item">
         <a href="{{page_path 'topics'}}" class="blocks-item-link">
+          <img src="{{asset 'icon-customer-service.svg'}}" class="blocks-item-icon" alt="Help Request Icon"/>
           <span class="blocks-item-title">Articles</span>
           <span class="blocks-item-description">Get answers to common questions about membership, loans and
             accounts</span>
@@ -29,13 +30,15 @@
       </li>
       <li class="blocks-item">
         <a href="https://creditunion.co.uk/service-status/" class="blocks-item-link">
+        <img src="{{asset 'icon-customer-service.svg'}}" class="blocks-item-icon" alt="Help Request Icon"/>
           <span class="blocks-item-title">Service Status</span>
           <span class="blocks-item-description">Check for current and scheduled maintenance and service issues</span>
         </a>
       </li>
             <li class="blocks-item">
-              <img src="{{asset 'icon-customer-service.svg'}}" class="blocks-item-icon" alt="Help Request Icon"/>
+              
         <a href="{{page_path 'new_request'}}" class="blocks-item-link">
+          <img src="{{asset 'icon-customer-service.svg'}}" class="blocks-item-icon" alt="Help Request Icon"/>
           <span class="blocks-item-title">Submit Help Request</span>
           <span class="blocks-item-description">Contact us and get a response sooner by answering some quick questions</span>
         </a>
@@ -45,6 +48,28 @@
   </section>
 </div>
 <div class="container">
+    {{#if promoted_articles}}
+    <section class="articles">
+      <h2 class="section-header">Popular Guides</h2>
+      <ul class="article-list promoted-articles">
+        {{#each promoted_articles}}
+        <li class="promoted-articles-item">
+          <a href="{{url}}">
+            {{title}}
+
+            {{#if internal}}
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16"
+              class="icon-lock" title="{{t 'internal'}}">
+              <rect width="12" height="9" x="2" y="7" fill="currentColor" rx="1" ry="1" />
+              <path fill="none" stroke="currentColor" d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5" />
+            </svg>
+            {{/if}}
+          </a>
+        </li>
+        {{/each}}
+      </ul>
+    </section>
+    {{/if}}
   <section class="section knowledge-base">
     <h2 class="section-header">Knowledge base</h2>
     <section class="categories blocks">
@@ -73,29 +98,6 @@
       </ul>
       {{pagination}}
     </section>
-
-    {{#if promoted_articles}}
-    <section class="articles">
-      <h2 class="section-header">Promoted articles</h2>
-      <ul class="article-list promoted-articles">
-        {{#each promoted_articles}}
-        <li class="promoted-articles-item">
-          <a href="{{url}}">
-            {{title}}
-
-            {{#if internal}}
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16"
-              class="icon-lock" title="{{t 'internal'}}">
-              <rect width="12" height="9" x="2" y="7" fill="currentColor" rx="1" ry="1" />
-              <path fill="none" stroke="currentColor" d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5" />
-            </svg>
-            {{/if}}
-          </a>
-        </li>
-        {{/each}}
-      </ul>
-    </section>
-    {{/if}}
   </section>
 
   {{#if help_center.community_enabled}}
