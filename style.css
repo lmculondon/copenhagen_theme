@@ -1502,10 +1502,12 @@ input[type="submit"][disabled] {
 
 @media (min-width: 1024px) {
   .promoted-articles-item {
-    align-self: flex-end;
+    align-self: stretch;
     flex: 0 0 auto;
     padding-right: 30px;
     width: 33%;
+    flex-grow: 1;
+    display: flex;
     /* Three columns on desktop */
   }
 
