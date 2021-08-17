@@ -1189,13 +1189,11 @@ input[type="submit"][disabled] {
 
 /***** Hero component *****/
 .hero {
-  background-image: url($homepage_background_image);
-  background-position: center;
-  background-size: cover;
   height: 300px;
   padding: 0 20px;
   text-align: center;
   width: 100%;
+  display: flex;
 }
 
 .hero .container {
@@ -1211,6 +1209,11 @@ input[type="submit"][disabled] {
   margin: auto 0;
 }
 @media (min-width: 768px) {
+  .hero {
+    background-image: url($homepage_background_image);
+    background-position: center;
+    background-size: cover;
+  }
   .hero-inner {
     max-width: 580px;
   }
