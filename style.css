@@ -2205,7 +2205,10 @@ input[type="submit"][disabled] {
   left: auto;
   right: 0;
 }
-
+/.upload-dropzone {
+  border: 1px solid #dce7f3;
+  background-color: #f1f8ff;
+}
 .upload-dropzone span {
   color: lighten($text_color, 20%);
 }
@@ -2214,6 +2217,7 @@ input[type="submit"][disabled] {
   border-left: 8px solid rgba(28, 25, 26, 0.4);
   padding: 12px 24px;
   margin-bottom: 36px;
+  font-weight: 400;
 }
 .inset-text p {
   margin:0
@@ -4913,8 +4917,8 @@ html[lang|="zh"] .search-results-description em {
 .notification {
   border: 1px solid;
   display: table;
-  font-family: sans-serif;
-  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
   padding: 13px 15px;
   transition: height .2s;
   width: 100%;
@@ -5009,7 +5013,7 @@ a.notification-dismiss {
 
 /* Inline notifications */
 .notification-inline {
-  border-radius: 4px;
+  border-radius: 0;
   line-height: 14px;
   margin-top: 5px;
   padding: 5px;
@@ -5036,9 +5040,10 @@ a.notification-dismiss {
 }
 
 .notification-inline.notification-error {
-  background-color: #fff0f1;
-  border: 1px solid #e35b66;
-  color: #cc3340;
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  color: #e31836;
 }
 
 .notification-inline.notification-large {
