@@ -2037,7 +2037,13 @@ input[type="submit"][disabled] {
   margin: 40px 0;
   word-wrap: break-word;
 }
-
+.article-content img {
+  border-style: none;
+  padding: 4px;
+  border: 18px solid #dfe0e17a;
+  border-radius: 10px;
+  margin: calc(1.325rem + 0.9vmin) 0;
+}
 .article-content p {
   margin-bottom: calc(1.325rem + 0.9vmin);
 }
