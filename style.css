@@ -1974,6 +1974,10 @@ input[type="submit"][disabled] {
   list-style-position: outside;
   margin: 20px 0 20px 20px;
 }
+.article-body ul li {
+  display: block;
+  margin-bottom: 4px;
+}
 
 [dir="rtl"] .article-body ul,
 [dir="rtl"] .article-body ol {
@@ -2209,16 +2213,17 @@ input[type="submit"][disabled] {
 
 .sidenav-item {
   display: block;
-  margin-bottom: calc(3px + 2.1vmin);
-  padding-bottom: calc(3px + 2.1vmin);
+  margin-bottom: 12px;
+  padding-bottom: 11px;
   border-bottom: 1px solid #dfe0e1;
 }
 
-.sidenav-item.current-article,
+.sidenav-item.current-article {
+  font-weight: 700;
+};
 .sidenav-item:hover {
   color: rgba(21, 101, 171, 1);
-  font-weight: 700;
-  text-decoration: none;
+  text-decoration: underline
 }
 
 .recent-articles li,
