@@ -216,11 +216,11 @@ h6 {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: calc(1.4407rem + 2.2884vmin);
 }
 
 h2 {
-  font-size: 22px;
+  font-size: calc(1.2583rem + 0.0996vmin);
 }
 
 h3 {
@@ -433,6 +433,17 @@ ul {
 .pagination-prev-link:focus,
 .pagination-first-link:focus,
 .pagination-last-link:focus,
+.button:visited,
+.split-button button:visited,
+.section-subscribe button:visited,
+.article-subscribe button:visited,
+.community-follow button:visited,
+.requests-table-toolbar .organization-subscribe button:visited,
+.subscriptions-subscribe button:visited,
+.pagination-next-link:visited,
+.pagination-prev-link:visited,
+.pagination-first-link:visited,
+.pagination-last-link:visited,
 .button.button-primary,
 .split-button button.button-primary,
 .section-subscribe button.button-primary,
@@ -448,8 +459,9 @@ ul {
 .button-primary.pagination-prev-link,
 .button-primary.pagination-first-link,
 .button-primary.pagination-last-link {
-  background-color: $brand_color;
-  color: $brand_text_color;
+  background-color: transparent;
+  border-color: $brand_color;
+  color: $brand_color;
   text-decoration: none;
 }
 
@@ -1317,8 +1329,10 @@ input[type="submit"][disabled] {
 }
 
 .page-header-description {
-  font-style: italic;
-  margin: 0 0 30px 0;
+  border-left: 8px solid rgba(28, 25, 26, 0.4);
+  padding: 12px 24px;
+  margin-bottom: 36px;
+  font-weight: 400;
   word-break: break-word;
 }
 
@@ -1794,7 +1808,7 @@ input[type="submit"][disabled] {
 .section-tree-title {
   margin-bottom: 0;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .section-tree-title a {
@@ -1925,7 +1939,7 @@ input[type="submit"][disabled] {
 }
 
 .article-title {
-  font-size: calc(1.3607rem + 1.3284vmin);
+  font-size: calc(1.4407rem + 2.2884vmin);
 }
 
 @media (min-width: 768px) {
@@ -1975,8 +1989,7 @@ input[type="submit"][disabled] {
   margin: 20px 0 20px 20px;
 }
 .article-body ul li {
-  display: block;
-  margin-bottom: 4px;
+  padding-bottom: 4px;
 }
 
 [dir="rtl"] .article-body ul,
@@ -2036,6 +2049,9 @@ input[type="submit"][disabled] {
   line-height: 1.7;
   margin: 40px 0;
   word-wrap: break-word;
+}
+.article-content .button {
+
 }
 .article-content img {
   border-style: none;
@@ -2224,6 +2240,7 @@ input[type="submit"][disabled] {
 .sidenav-item {
   display: block;
   margin-bottom: 12px;
+  font-size: 16px;
   padding-bottom: 11px;
   border-bottom: 1px solid #dfe0e1;
 }
@@ -4958,7 +4975,9 @@ input[type="submit"][disabled] {
 
 @media (min-width: 1024px) {
   .search-result-breadcrumbs {
-    display: table-row;
+    padding: 4px;
+    display: inline-block;
+    border-radius: 4px;
   }
 }
 
