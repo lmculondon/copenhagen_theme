@@ -1589,6 +1589,17 @@ input[type="submit"][disabled] {
   text-decoration: none;
 }
 
+span.promoted-articles-item-header::after {
+  position: absolute;
+  content: "\2192";
+  right: 0;
+  top: 16px;
+  font-size: 24px;
+  width: 24px;
+  line-height: 1;
+  height: 24px;
+}
+
 .promoted-articles-item-header {
   color: #1565ab;
   font-weight: 600;
@@ -1609,16 +1620,6 @@ input[type="submit"][disabled] {
 }
 }
 
-.promoted-articles-item-header:after {
-  position: absolute;
-  content: "\2192";
-  right: 0;
-  top: 16px;
-  font-size: 24px;
-  width: 24px;
-  line-height: 1;
-  height: 24px;
-}
 
 .promoted-articles-item .icon-lock {
   vertical-align: baseline;
@@ -1768,7 +1769,7 @@ input[type="submit"][disabled] {
 /***** Category pages *****/
 .category-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .category-content {
@@ -1777,7 +1778,7 @@ input[type="submit"][disabled] {
 
 @media (min-width: 1024px) {
   .category-content {
-    flex: 0 0 80%;
+    flex: 0 0 100%;
   }
 }
 
@@ -1822,11 +1823,23 @@ input[type="submit"][disabled] {
 
 .article-list-item {
   font-size: 16px;
-  padding: 15px 0;
+  margin-top: 16px;
 }
 
-.article-list-item a {
-  color: $text_color;
+.article-list-item a:hover {
+  text-decoration: underline;
+}
+
+.article-list-item a:focus {
+  outline: 3px solid transparent;
+  color: #0b0c0c;
+  background-color: #ffdd00;
+  -webkit-box-shadow: 0 -2px #ffdd00, 0 4px #272d37;
+  box-shadow: 0 -2px #ffdd00, 0 4px #272d37;
+  text-decoration: none;
+}
+.article-list-item.article-promoted a {
+  font-weight: 700;;
 }
 
 .icon-star {
@@ -1988,6 +2001,7 @@ input[type="submit"][disabled] {
   list-style-position: outside;
   margin: 20px 0 20px 20px;
 }
+
 .article-body ul li {
   padding-bottom: 4px;
 }
@@ -2050,9 +2064,9 @@ input[type="submit"][disabled] {
   margin: 40px 0;
   word-wrap: break-word;
 }
-.article-content .button {
 
-}
+.article-content .button {}
+
 .article-content img {
   border-style: none;
   padding: 4px;
@@ -2060,14 +2074,17 @@ input[type="submit"][disabled] {
   border-radius: 10px;
   margin: calc(1.325rem + 0.9vmin) 0;
 }
+
 .article-content p {
   margin-bottom: calc(1.325rem + 0.9vmin);
 }
+
 .article-content hr {
   border-top: #dfe0e1 1px solid;
   margin-bottom: calc(1.425rem + 2.1vmin);
   margin-top: calc(1.425rem + 2.1vmin);
 }
+
 .article-footer {
   align-items: center;
   display: flex;
@@ -2247,7 +2264,10 @@ input[type="submit"][disabled] {
 
 .sidenav-item.current-article {
   font-weight: 700;
-};
+}
+
+;
+
 .sidenav-item:hover {
   color: rgba(21, 101, 171, 1);
   text-decoration: underline
