@@ -1,7 +1,7 @@
 {
   "name": "LMCU Zendesk Theme",
   "author": "London Mutual Credit Union",
-  "version": "2.9.9999",
+  "version": "2.9.99991",
   "api_version": 2,
   "default_locale": "en-gb",
   "settings": [

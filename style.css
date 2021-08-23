@@ -1819,6 +1819,23 @@ span.promoted-articles-item-header::after {
 .section-tree .see-all-articles {
   display: block;
   padding: 15px 0;
+  color: #5a6d7c;
+  border-top: 1px solid #dfe0e1;
+  margin-top: 32px;
+  padding-top: 15px;
+}
+
+.section-tree .see-all-articles:hover {
+  text-decoration: none;
+}
+
+.section-tree .see-all-articles::after {
+  content: "\2192";
+  font-size: 24px;
+  width: 24px;
+  line-height: 1;
+  height: 24px;
+  display: inline;
 }
 
 .article-list-item {
@@ -1826,7 +1843,7 @@ span.promoted-articles-item-header::after {
   margin-top: 16px;
 }
 
-.article-list-item a {
+.article-list-item a:hover {
   text-decoration: underline;
 }
 
@@ -1838,8 +1855,10 @@ span.promoted-articles-item-header::after {
   box-shadow: 0 -2px #ffdd00, 0 4px #272d37;
   text-decoration: none;
 }
+
 .article-list-item.article-promoted a {
-  font-weight: 700;;
+  font-weight: 700;
+  ;
 }
 
 .icon-star {
