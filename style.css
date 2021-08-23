@@ -1592,8 +1592,8 @@ input[type="submit"][disabled] {
 span.promoted-articles-item-header::after {
   position: absolute;
   content: "\2192";
-  right: 0;
-  top: 16px;
+  right: -32px;
+  top: 0x;
   font-size: 24px;
   width: 24px;
   line-height: 1;
@@ -1826,7 +1826,7 @@ span.promoted-articles-item-header::after {
   margin-top: 16px;
 }
 
-.article-list-item a:hover {
+.article-list-item a {
   text-decoration: underline;
 }
 
