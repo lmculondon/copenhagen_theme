@@ -889,8 +889,11 @@ input[type="submit"][disabled] {
 }
 .user-nav[aria-expanded="true"]>iframe {
   display: block;
+  margin: 20px;
 }
-
+.nav-wrapper {
+  display: flex;
+}
 .nav-wrapper a {
   border: 0;
   color: #475264;
@@ -1020,6 +1023,7 @@ input[type="submit"][disabled] {
 /***** User info in header *****/
 .user-info {
   display: inline-block;
+  margin-left: 20px;
 }
 
 .user-info .dropdown-toggle::after {
@@ -1035,11 +1039,11 @@ input[type="submit"][disabled] {
 .user-info>button {
   border: 1px solid #ebeef1;
   min-width: 0;
-  padding: 10px;
+  padding: 7px 10px;
   border-radius: 4px;
   color: #475264;
-  font-weight: 400;
-  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size:16px;
   white-space: nowrap;
 }
 
@@ -5217,6 +5221,9 @@ html[dir="rtl"] .notification-left-aligned {
   padding: 0;
   text-align: initial;
   vertical-align: middle;
+}
+.dropdown-toggle .user-avatar {
+  margin-right: 5px;
 }
 
 .dropdown-toggle:hover {
