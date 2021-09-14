@@ -868,6 +868,8 @@ input[type="submit"][disabled] {
 @media (min-width: 768px) {
   .user-nav {
     position: relative;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -885,6 +887,9 @@ input[type="submit"][disabled] {
   display: block;
   margin: 20px;
 }
+.user-nav[aria-expanded="true"]>iframe {
+  display: block;
+}
 
 .nav-wrapper a {
   border: 0;
@@ -896,10 +901,16 @@ input[type="submit"][disabled] {
   padding: 0 20px 0 0;
   width: auto;
 }
+.nav-wrapper iframe {
+  display: none;
+}
 
 @media (min-width: 768px) {
   .nav-wrapper a {
     display: inline-block;
+  }
+  .nav-wrapper iframe {
+    display: block;
   }
 }
 
